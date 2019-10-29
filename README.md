@@ -24,3 +24,14 @@ Running Singularity on Stampede2
   kuvasz (score = 0.00458)
   Saluki, gazelle hound (score = 0.00371)
   English setter (score = 0.00307)
+  
+  
+  
+  
+  Some useful singularity commands for running docker images:
+  
+  > singularity shell docker://ubuntu:latest
+  > singularity run docker://ubuntu:latest
+  > singularity exec docker://ubuntu:latest echo "Hello Dinosaur!"
+  > singularity pull docker://ubuntu:latest
+  > singularity build ubuntu.img docker://ubuntu:latest
