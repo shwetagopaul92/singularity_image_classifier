@@ -10,6 +10,7 @@ Running Singularity on Stampede2
   You now have access to singularity commands on Stampede2
 - Git clone the https://github.com/shwetagopaul92/docker_image_classifier
   > cd docker_image_classifier
+  > singularity exec /work/06935/sgopal/singularity_cache/image_classifier.simg classify_image.py --image_file dog.jpg
   > singularity run -B $PWD:/data docker://reshg/image_classifier classify_image.py --model_dir /model --image_file /data/dog.jpg
   
   The way Singularity mounts the volume is different. 
